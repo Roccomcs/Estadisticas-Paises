@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>⚽ Analizador de Partidos — Probabilidades</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>⚽ Analizador de Partidos</h1>
+    <p class="sub">Probabilidad de victoria entre dos selecciones · datos en vivo de Sofascore</p>
+  </header>
+
+  <main>
+    <section class="picker">
+      <div class="team-input">
+        <label>Equipo A</label>
+        <input type="text" id="searchA" placeholder="Ej: Argentina" autocomplete="off" />
+        <ul class="suggestions" id="suggA"></ul>
+        <div class="chosen" id="chosenA"></div>
+      </div>
+
+      <div class="vs">VS</div>
+
+      <div class="team-input">
+        <label>Equipo B</label>
+        <input type="text" id="searchB" placeholder="Ej: Francia" autocomplete="off" />
+        <ul class="suggestions" id="suggB"></ul>
+        <div class="chosen" id="chosenB"></div>
+      </div>
+    </section>
+
+    <section class="options">
+      <label>¿Quién juega de local?</label>
+      <div class="home-toggle" id="homeToggle">
+        <button data-home="A" class="active">Equipo A</button>
+        <button data-home="neutral" class="active">Cancha neutral</button>
+        <button data-home="B">Equipo B</button>
+      </div>
+    </section>
+
+    <button id="analyzeBtn" disabled>Analizar partido</button>
+
+    <div id="status" class="status"></div>
+    <section id="results" class="results hidden"></section>
+  </main>
+
+  <footer>
+    <p>Modelo de Poisson sobre goles esperados · forma reciente, ranking FIFA e historial directo.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

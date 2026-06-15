@@ -1,0 +1,14 @@
+{
+  "name": "estadisticas-paises",
+  "version": "1.0.0",
+  "description": "Analizador de probabilidades de partidos de fútbol entre selecciones usando datos de Sofascore",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
