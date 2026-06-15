@@ -1,0 +1,1 @@
+En este repo recrearemos distintas situaciones para ver quien tiene mas probabilidad de ganar un partido del mundial
